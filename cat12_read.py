@@ -169,4 +169,5 @@ for i in range(epoch):
     print("total_loss: {}".format(total_test_loss))
     print("total_acc: {}".format(total_acc))
 
-torch.save(model.state_dict(), "resnet_to_cat12_4.pth")
+torch.save(model.state_dict(), "resnet_to_cat12.pth")
+torch.save(opt.state_dict(), "adam_to_cat12.pth")
